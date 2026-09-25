@@ -1,0 +1,907 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[お名前] | EC業務の効率化・自動化ポートフォリオ</title>
+<meta name="description" content="eBay輸出リサーチや楽天ROOM運用の手作業を、AIと一緒に自動化してきた実績をまとめたポートフォリオです。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@600;700;900&amp;family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;background:#F3EFE6}
+body{font-family:'Zen Kaku Gothic New','Hiragino Sans','Yu Gothic',sans-serif;color:#1E1D1A}
+.mode{display:none}
+body.m-plain .mode-plain, body.m-tech .mode-tech{display:block}
+.mode > div{min-width:0 !important;min-height:0 !important}
+button:focus-visible{outline:3px solid #9A4A1B;outline-offset:2px}
+@media (max-width: 1000px){
+  .mode [style*="padding: 72px 80px"],.mode [style*="padding: 40px 80px"],.mode [style*="padding: 48px 80px"],.mode [style*="padding: 56px 80px"],.mode [style*="padding: 72px 80px 72px"]{padding-left:28px !important;padding-right:28px !important}
+  .mode [style*="repeat(7"]{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+  .mode [style*="repeat(4"]{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+  .mode [style*="repeat(2"]{grid-template-columns:1fr !important}
+  .mode h1{font-size:40px !important}
+  .mode h2{font-size:30px !important}
+}
+@media (max-width: 600px){
+  .mode [style*="repeat(7"],.mode [style*="repeat(4"]{grid-template-columns:1fr !important}
+  .mode h1{font-size:32px !important}
+  .mode header > div:first-child{flex-direction:column;align-items:flex-start !important;gap:16px}
+  .mode footer > div:last-child{flex-direction:column;gap:10px !important}
+  .mode [style*="font-size: 52px"]{font-size:40px !important}
+  .mode [style*="padding: 36px"]{padding:22px !important}
+  .mode [style*="align-items: baseline"]{flex-direction:column;align-items:flex-start !important;gap:6px !important}
+  .mode [style*="min-height: 2"]{min-height:0 !important}
+}
+</style>
+</head>
+<body class="m-plain">
+<div class="mode mode-plain">
+<div style="width: 100%; min-width: 1100px; min-height: 5300px; box-sizing: border-box; display: flex; flex-direction: column; background: #F3EFE6; color: #1E1D1A; font-family: 'Zen Kaku Gothic New','Hiragino Sans','Yu Gothic',sans-serif">
+
+<!-- HERO -->
+<header style="padding: 72px 80px 64px; display: flex; flex-direction: column; gap: 28px; border-bottom: 1px solid #D9D2C3">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<div style="font-family: 'JetBrains Mono',monospace; font-size: 13px; letter-spacing: 0.16em; color: #5C584F">PORTFOLIO — 2026.07–2026.09</div>
+<div style="display: flex; align-items: center; gap: 12px">
+<span style="font-size: 14px; color: #5C584F">表示モード</span>
+<div style="display: flex; background: #E6E0D2; border-radius: 999px; padding: 4px; gap: 4px">
+<button type="button" aria-pressed="true" style="font-family:inherit;font-size:14px;font-weight:700;border:none;border-radius:999px;padding:10px 18px;min-height:44px;cursor:pointer;background:#2D4A7A;color:#FFFFFF" data-mode="plain">わかりやすく</button>
+<button type="button" aria-pressed="false" style="font-family:inherit;font-size:14px;font-weight:500;border:none;border-radius:999px;padding:10px 18px;min-height:44px;cursor:pointer;background:transparent;color:#3F3C36" data-mode="tech">技術くわしく</button>
+</div>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 18px; max-width: 1000px">
+<div style="font-size: 18px; color: #2D4A7A; font-weight: 700">[お名前]｜EC業務の効率化・自動化</div>
+<h1 style="margin: 0; font-family: 'Zen Old Mincho','Hiragino Mincho ProN',serif; font-weight: 900; font-size: 64px; line-height: 1.25; letter-spacing: 0.01em">リサーチも、計算も、転記も。<br>手作業の時間を、仕組みで減らす。</h1>
+<p style="margin: 0; font-size: 19px; line-height: 1.9; color: #3F3C36; max-width: 880px">eBay輸出リサーチや楽天ROOM運用で毎日くり返していた作業を、Claudeと一緒に自動化してきた記録です。プログラミング未経験から始めて、「作る」だけでなく「パソコンが苦手な人でも使える形に仕上げる」ところまでを大切にしています。</p>
+<p style="margin: 0; font-size: 15px; color: #5C584F">右上の表示モードで、各実績の説明を「わかりやすく（ビフォー・アフター）」と「技術くわしく（使った技術）」に切り替えられます。</p>
+</div>
+</header>
+
+<!-- STATS -->
+<section style="padding: 40px 80px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; border-bottom: 1px solid #D9D2C3">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<div style="font-family: 'Zen Old Mincho',serif; font-size: 52px; font-weight: 900; color: #2D4A7A">5</div>
+<div style="font-size: 15px; color: #3F3C36">実際に動くツール・アプリ</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<div style="font-family: 'Zen Old Mincho',serif; font-size: 52px; font-weight: 900; color: #2D4A7A">3</div>
+<div style="font-size: 15px; color: #3F3C36">自動化したeBayリサーチ工程</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<div style="font-family: 'Zen Old Mincho',serif; font-size: 52px; font-weight: 900; color: #2D4A7A">1回</div>
+<div style="font-size: 15px; color: #3F3C36">紹介文づくりに必要なボタン操作</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<div style="font-family: 'Zen Old Mincho',serif; font-size: 52px; font-weight: 900; color: #2D4A7A">4倍</div>
+<div style="font-size: 15px; color: #3F3C36">1時間あたりのリサーチ件数（1件→4件）</div>
+</div>
+</section>
+
+<!-- EBAY SYSTEM -->
+<section style="padding: 72px 80px 24px; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'JetBrains Mono',monospace; font-size: 13px; letter-spacing: 0.16em; color: #9A4A1B">MAIN PROJECT</div>
+<h2 style="margin: 0; font-family: 'Zen Old Mincho',serif; font-size: 40px; font-weight: 700">eBayリサーチ 時間短縮システム</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.9; color: #3F3C36; max-width: 900px">「売れる商品を探す→仕入れ先を探す→利益を計算する→シートに記入する」というリサーチ業務を工程ごとに分解しました。リサーチ項目の1つで時間のかかっていた「7割ライン」の判定（同じ商品の販売価格の中で、自分の販売価格が7割のラインより安いか）や、利益計算シートからクライアント提出用シートへの転記など、機械に任せられる部分を自動化しています。人の判断が必要なところは残し、それ以外の手作業を減らす設計です。</p>
+<div style="display: flex; align-items: baseline; gap: 16px; background: #FFFDF8; border: 1px solid #D9D2C3; border-radius: 14px; padding: 20px 24px; align-self: flex-start"><span style="font-size: 15px; font-weight: 700; color: #3F3C36">成果</span><span style="font-family: 'Zen Old Mincho',serif; font-size: 30px; font-weight: 900; color: #2D4A7A">1時間1件 → 1時間4件</span><span style="font-size: 15px; color: #3F3C36">1件あたり約60分かかっていたリサーチが、約15分に。</span></div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px">
+
+<div style="background: #FFFDF8; border: 1px solid #D9D2C3; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 10px; min-height: 250px; box-sizing: border-box">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<span style="font-family: 'JetBrains Mono',monospace; font-size: 14px; color: #5C584F">STEP 01</span>
+<span style="font-size:12px;font-weight:700;color:#FFFFFF;background:#2D4A7A;padding:4px 10px;border-radius:999px">自動化</span>
+</div>
+<div style="font-size: 19px; font-weight: 700; line-height: 1.4">キーワード連想</div>
+<p style="margin: 0; font-size: 14px; line-height: 1.8; color: #3F3C36">商品名を入れるだけで、eBayの検索に使うキーワード候補を英語・日本語で自動作成。</p>
+</div>
+
+<div style="background: #FFFDF8; border: 1px solid #D9D2C3; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 10px; min-height: 250px; box-sizing: border-box">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<span style="font-family: 'JetBrains Mono',monospace; font-size: 14px; color: #5C584F">STEP 02</span>
+<span style="font-size:12px;font-weight:700;color:#FFFFFF;background:#2D4A7A;padding:4px 10px;border-radius:999px">自動化</span>
+</div>
+<div style="font-size: 19px; font-weight: 700; line-height: 1.4">売れ筋商品のピックアップ</div>
+<p style="margin: 0; font-size: 14px; line-height: 1.8; color: #3F3C36">$100以上・日本からの出品・2個以上売れた商品を、データから自動で抽出して並び替え。</p>
+</div>
+
+<div style="background: #FFFDF8; border: 1px solid #D9D2C3; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 10px; min-height: 250px; box-sizing: border-box">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<span style="font-family: 'JetBrains Mono',monospace; font-size: 14px; color: #5C584F">STEP 03</span>
+<span style="font-size:12px;font-weight:700;color:#5C584F;border:1px solid #A8A08F;padding:3px 10px;border-radius:999px">人が判断</span>
+</div>
+<div style="font-size: 19px; font-weight: 700; line-height: 1.4">仕入れ先探し</div>
+<p style="margin: 0; font-size: 14px; line-height: 1.8; color: #3F3C36">商品の状態や付属品の見極めは人が担当。一括検索サイトと検索条件の工夫で探す時間を短縮。</p>
+</div>
+
+<div style="background: #FFFDF8; border: 1px solid #D9D2C3; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 10px; min-height: 250px; box-sizing: border-box">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<span style="font-family: 'JetBrains Mono',monospace; font-size: 14px; color: #5C584F">STEP 04</span>
+<span style="font-size:12px;font-weight:700;color:#FFFFFF;background:#2D4A7A;padding:4px 10px;border-radius:999px">一部自動</span>
+</div>
+<div style="font-size: 19px; font-weight: 700; line-height: 1.4">7割確認・利益計算→提出</div>
+<p style="margin: 0; font-size: 14px; line-height: 1.8; color: #3F3C36">7割ラインの確認を自動化。利益計算シートへの入力は人が行い、その結果をクライアント提出用のスプレッドシートへ自動で転記。</p>
+</div>
+
+</div>
+</section>
+
+<!-- SEVENTY -->
+<section style="padding: 48px 80px 24px; display: flex; flex-direction: column; gap: 24px">
+<div style="background: #FFFDF8; border: 1px solid #D9D2C3; border-radius: 16px; padding: 36px; display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'JetBrains Mono',monospace; font-size: 13px; letter-spacing: 0.16em; color: #9A4A1B">CLOSE-UP</div>
+<h3 style="margin: 0; font-family: 'Zen Old Mincho',serif; font-size: 30px; font-weight: 700">7割ライン確認：1商品ごとの7つの手作業を自動化</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.9; color: #3F3C36">「7割ライン確認」は、利益計算と並ぶリサーチ項目の1つです（どちらが先でも可）。どちらもカスタムリンク（条件を設定したeBayの検索結果ページ）で検索したあとに行います。これまで商品ごとに下の7つの手順を手作業でくり返していたところを、仕組みで処理できるようにしました。</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 12px">
+
+<div style="background: #F3EFE6; border-radius: 12px; padding: 16px 14px; display: flex; flex-direction: column; gap: 10px; min-height: 230px; box-sizing: border-box">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<span style="font-family: 'Zen Old Mincho',serif; font-size: 24px; font-weight: 900; color: #1E1D1A">①</span>
+<span style="font-size:12px;font-weight:700;color:#5C584F;border:1px solid #A8A08F;padding:3px 10px;border-radius:999px">人</span>
+</div>
+<p style="margin: 0; font-size: 13.5px; line-height: 1.75; color: #1E1D1A">カスタムリンクのページで、ページ内検索（Ctrl＋F）で「From Japan」を検索</p>
+</div>
+
+<div style="background: #F3EFE6; border-radius: 12px; padding: 16px 14px; display: flex; flex-direction: column; gap: 10px; min-height: 230px; box-sizing: border-box">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<span style="font-family: 'Zen Old Mincho',serif; font-size: 24px; font-weight: 900; color: #1E1D1A">②</span>
+<span style="font-size:12px;font-weight:700;color:#FFFFFF;background:#2D4A7A;padding:4px 10px;border-radius:999px">自動</span>
+</div>
+<p style="margin: 0; font-size: 13.5px; line-height: 1.75; color: #1E1D1A">日本から出品されている同じ商品が何個あるかを数える</p>
+</div>
+
+<div style="background: #F3EFE6; border-radius: 12px; padding: 16px 14px; display: flex; flex-direction: column; gap: 10px; min-height: 230px; box-sizing: border-box">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<span style="font-family: 'Zen Old Mincho',serif; font-size: 24px; font-weight: 900; color: #1E1D1A">③</span>
+<span style="font-size:12px;font-weight:700;color:#FFFFFF;background:#2D4A7A;padding:4px 10px;border-radius:999px">自動</span>
+</div>
+<p style="margin: 0; font-size: 13.5px; line-height: 1.75; color: #1E1D1A">その個数に0.7をかける（小数点以下は切り捨て）</p>
+</div>
+
+<div style="background: #F3EFE6; border-radius: 12px; padding: 16px 14px; display: flex; flex-direction: column; gap: 10px; min-height: 230px; box-sizing: border-box">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<span style="font-family: 'Zen Old Mincho',serif; font-size: 24px; font-weight: 900; color: #1E1D1A">④</span>
+<span style="font-size:12px;font-weight:700;color:#FFFFFF;background:#2D4A7A;padding:4px 10px;border-radius:999px">自動</span>
+</div>
+<p style="margin: 0; font-size: 13.5px; line-height: 1.75; color: #1E1D1A">日本人セラーの最安値から順に、③の数だけ数える</p>
+</div>
+
+<div style="background: #F3EFE6; border-radius: 12px; padding: 16px 14px; display: flex; flex-direction: column; gap: 10px; min-height: 230px; box-sizing: border-box">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<span style="font-family: 'Zen Old Mincho',serif; font-size: 24px; font-weight: 900; color: #1E1D1A">⑤</span>
+<span style="font-size:12px;font-weight:700;color:#FFFFFF;background:#2D4A7A;padding:4px 10px;border-radius:999px">自動</span>
+</div>
+<p style="margin: 0; font-size: 13.5px; line-height: 1.75; color: #1E1D1A">その商品の販売価格を確認（送料の設定があれば足す）</p>
+</div>
+
+<div style="background: #F3EFE6; border-radius: 12px; padding: 16px 14px; display: flex; flex-direction: column; gap: 10px; min-height: 230px; box-sizing: border-box">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<span style="font-family: 'Zen Old Mincho',serif; font-size: 24px; font-weight: 900; color: #1E1D1A">⑥</span>
+<span style="font-size:12px;font-weight:700;color:#FFFFFF;background:#2D4A7A;padding:4px 10px;border-radius:999px">自動</span>
+</div>
+<p style="margin: 0; font-size: 13.5px; line-height: 1.75; color: #1E1D1A">⑤の価格と、リサーチした商品の販売価格を比べる</p>
+</div>
+
+<div style="background: #F3EFE6; border-radius: 12px; padding: 16px 14px; display: flex; flex-direction: column; gap: 10px; min-height: 230px; box-sizing: border-box">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<span style="font-family: 'Zen Old Mincho',serif; font-size: 24px; font-weight: 900; color: #1E1D1A">⑦</span>
+<span style="font-size:12px;font-weight:700;color:#FFFFFF;background:#2D4A7A;padding:4px 10px;border-radius:999px">自動</span>
+</div>
+<p style="margin: 0; font-size: 13.5px; line-height: 1.75; color: #1E1D1A">リサーチ商品のほうが安ければ提出用シートへ記入。高ければ別の商品へ</p>
+</div>
+
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px; border-top: 1px solid #D9D2C3; padding-top: 18px">
+<div style="font-family: 'JetBrains Mono',monospace; font-size: 12px; color: #5C584F; letter-spacing: 0.1em">POINT</div>
+<p style="margin: 0; font-size: 15px; line-height: 1.8; color: #1E1D1A">数えまちがい・計算まちがいが起きやすい②〜⑦をまとめて自動化。人がやるのは、カスタムリンクで検索するところだけになりました。</p>
+</div>
+</div>
+</section>
+
+<!-- FEATURED -->
+<section style="padding: 56px 80px 24px; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'JetBrains Mono',monospace; font-size: 13px; letter-spacing: 0.16em; color: #9A4A1B">FEATURED WORKS</div>
+<h2 style="margin: 0; font-family: 'Zen Old Mincho',serif; font-size: 40px; font-weight: 700">主な実績</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px">
+
+<article style="background: #FFFDF8; border: 1px solid #D9D2C3; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span style="font-size: 13px; font-weight: 700; color: #FFFFFF; background: #2D4A7A; padding: 5px 12px; border-radius: 999px">eBay｜自動化ツール</span>
+<span style="font-family: 'JetBrains Mono',monospace; font-size: 13px; color: #5C584F">01</span>
+</div>
+<h3 style="margin: 0; font-family: 'Zen Old Mincho',serif; font-size: 28px; font-weight: 700; line-height: 1.4">売れ筋商品ピックアップの自動化</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #3F3C36">条件に合う売れ筋商品だけを、ダウンロードしたデータから一瞬で抜き出すツール。</p>
+<div style="background: #F3EFE6; border-radius: 12px; padding: 20px; min-height: 230px; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px">
+
+<div style="display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; gap: 12px; align-items: flex-start">
+<span style="flex-shrink: 0; font-family: 'JetBrains Mono',monospace; font-size: 12px; font-weight: 500; color: #5C584F; border: 1px solid #A8A08F; border-radius: 6px; padding: 3px 8px">BEFORE</span>
+<p style="margin: 0; font-size: 15px; line-height: 1.8; color: #3F3C36">毎回検索条件を入力し、「$100以上・日本からの出品・期間内に2個以上売れた」商品を目で見て1つずつ拾っていた。</p>
+</div>
+<div style="display: flex; gap: 12px; align-items: flex-start">
+<span style="flex-shrink: 0; font-family: 'JetBrains Mono',monospace; font-size: 12px; font-weight: 500; color: #FFFFFF; background: #9A4A1B; border-radius: 6px; padding: 4px 9px">AFTER</span>
+<p style="margin: 0; font-size: 15px; line-height: 1.8; color: #1E1D1A; font-weight: 500">データファイルをアイコンにドラッグ＆ドロップするだけで、条件に合う商品が売れた順に並ぶ。条件は設定ファイルの数字を変えるだけで切り替え可能。</p>
+</div>
+</div>
+
+
+</div>
+<div style="font-size: 15px; font-weight: 700; color: #9A4A1B">成果：人に残る作業はデータのダウンロード1回だけ</div>
+</article>
+
+<article style="background: #FFFDF8; border: 1px solid #D9D2C3; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span style="font-size: 13px; font-weight: 700; color: #FFFFFF; background: #2D4A7A; padding: 5px 12px; border-radius: 999px">eBay｜自動化ツール</span>
+<span style="font-family: 'JetBrains Mono',monospace; font-size: 13px; color: #5C584F">02</span>
+</div>
+<h3 style="margin: 0; font-family: 'Zen Old Mincho',serif; font-size: 28px; font-weight: 700; line-height: 1.4">利益計算シート→提出用シートへの自動転記</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #3F3C36">利益計算シートで出た結果を、クライアント提出用のスプレッドシートへ一瞬で転記する仕組み。7割ラインの確認も自動化。</p>
+<div style="background: #F3EFE6; border-radius: 12px; padding: 20px; min-height: 230px; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px">
+
+<div style="display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; gap: 12px; align-items: flex-start">
+<span style="flex-shrink: 0; font-family: 'JetBrains Mono',monospace; font-size: 12px; font-weight: 500; color: #5C584F; border: 1px solid #A8A08F; border-radius: 6px; padding: 3px 8px">BEFORE</span>
+<p style="margin: 0; font-size: 15px; line-height: 1.8; color: #3F3C36">商品ごとに、日本からの同じ商品を数えて0.7をかけ、安い順に数えて価格を確認し、リサーチ商品と比べる7つの手順を手作業でくり返していた。利益計算シートで出た結果も、クライアント提出用のスプレッドシートへ1件ずつ書き写していた。</p>
+</div>
+<div style="display: flex; gap: 12px; align-items: flex-start">
+<span style="flex-shrink: 0; font-family: 'JetBrains Mono',monospace; font-size: 12px; font-weight: 500; color: #FFFFFF; background: #9A4A1B; border-radius: 6px; padding: 4px 9px">AFTER</span>
+<p style="margin: 0; font-size: 15px; line-height: 1.8; color: #1E1D1A; font-weight: 500">7割ラインの確認は自動に。利益計算シートへの入力だけは手で行い、その結果は提出用のスプレッドシートへ一瞬で転記される。書き写しの手間と、転記ミスの心配がなくなった。</p>
+</div>
+</div>
+
+
+</div>
+<div style="font-size: 15px; font-weight: 700; color: #9A4A1B">成果：7割ライン確認と提出シートへの転記を一瞬に</div>
+</article>
+
+<article style="background: #FFFDF8; border: 1px solid #D9D2C3; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span style="font-size: 13px; font-weight: 700; color: #FFFFFF; background: #2D4A7A; padding: 5px 12px; border-radius: 999px">楽天ROOM｜自動化ツール</span>
+<span style="font-family: 'JetBrains Mono',monospace; font-size: 13px; color: #5C584F">03</span>
+</div>
+<h3 style="margin: 0; font-family: 'Zen Old Mincho',serif; font-size: 28px; font-weight: 700; line-height: 1.4">商品リサーチ＆紹介文の自動化</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #3F3C36">毎朝、紹介する商品候補がスプレッドシートに自動で並び、紹介文もボタン1つで作れる仕組み。</p>
+<div style="background: #F3EFE6; border-radius: 12px; padding: 20px; min-height: 230px; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px">
+
+<div style="display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; gap: 12px; align-items: flex-start">
+<span style="flex-shrink: 0; font-family: 'JetBrains Mono',monospace; font-size: 12px; font-weight: 500; color: #5C584F; border: 1px solid #A8A08F; border-radius: 6px; padding: 3px 8px">BEFORE</span>
+<p style="margin: 0; font-size: 15px; line-height: 1.8; color: #3F3C36">商品を探し、AIに1件ずつ貼って紹介文をもらい、コピーして戻る。この往復を商品ごとに繰り返していた。</p>
+</div>
+<div style="display: flex; gap: 12px; align-items: flex-start">
+<span style="flex-shrink: 0; font-family: 'JetBrains Mono',monospace; font-size: 12px; font-weight: 500; color: #FFFFFF; background: #9A4A1B; border-radius: 6px; padding: 4px 9px">AFTER</span>
+<p style="margin: 0; font-size: 15px; line-height: 1.8; color: #1E1D1A; font-weight: 500">毎日決まった時刻に候補商品が自動で一覧化。紹介したい商品にチェックを入れてボタンを押すと、全商品分の紹介文が2パターンずつ入る。</p>
+</div>
+</div>
+
+
+</div>
+<div style="font-size: 15px; font-weight: 700; color: #9A4A1B">成果：商品ごとの手作業の往復を、ボタン1回に</div>
+</article>
+
+<article style="background: #FFFDF8; border: 1px solid #D9D2C3; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span style="font-size: 13px; font-weight: 700; color: #FFFFFF; background: #2D4A7A; padding: 5px 12px; border-radius: 999px">Webアプリ</span>
+<span style="font-family: 'JetBrains Mono',monospace; font-size: 13px; color: #5C584F">04</span>
+</div>
+<h3 style="margin: 0; font-family: 'Zen Old Mincho',serif; font-size: 28px; font-weight: 700; line-height: 1.4">一日の振り返り分析アプリ「夕凪」</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #3F3C36">今日やったことを書くと、自動化できそうな作業と、その方法を提案してくれるアプリ。</p>
+<div style="background: #F3EFE6; border-radius: 12px; padding: 20px; min-height: 230px; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px">
+
+<div style="display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; gap: 12px; align-items: flex-start">
+<span style="flex-shrink: 0; font-family: 'JetBrains Mono',monospace; font-size: 12px; font-weight: 500; color: #5C584F; border: 1px solid #A8A08F; border-radius: 6px; padding: 3px 8px">BEFORE</span>
+<p style="margin: 0; font-size: 15px; line-height: 1.8; color: #3F3C36">日々の作業のうち、どこが自動化できるのかを自分で考えるしかなかった。</p>
+</div>
+<div style="display: flex; gap: 12px; align-items: flex-start">
+<span style="flex-shrink: 0; font-family: 'JetBrains Mono',monospace; font-size: 12px; font-weight: 500; color: #FFFFFF; background: #9A4A1B; border-radius: 6px; padding: 4px 9px">AFTER</span>
+<p style="margin: 0; font-size: 15px; line-height: 1.8; color: #1E1D1A; font-weight: 500">振り返りを入力して「分析する」を押すだけで、自動化候補と具体的な方法が一覧に。履歴も残る。ここで見つかった「ROOM投稿」の作業が、実際の自動化につながった。</p>
+</div>
+</div>
+
+
+</div>
+<div style="font-size: 15px; font-weight: 700; color: #9A4A1B">成果：次の自動化テーマを生み出す仕組み</div>
+</article>
+
+<article style="background: #FFFDF8; border: 1px solid #D9D2C3; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span style="font-size: 13px; font-weight: 700; color: #FFFFFF; background: #2D4A7A; padding: 5px 12px; border-radius: 999px">eBay｜自動化ツール</span>
+<span style="font-family: 'JetBrains Mono',monospace; font-size: 13px; color: #5C584F">05</span>
+</div>
+<h3 style="margin: 0; font-family: 'Zen Old Mincho',serif; font-size: 28px; font-weight: 700; line-height: 1.4">キーワード連想ツール</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #3F3C36">商品名から、eBayの検索に使うキーワード候補を自動で作るツール。</p>
+<div style="background: #F3EFE6; border-radius: 12px; padding: 20px; min-height: 230px; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px">
+
+<div style="display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; gap: 12px; align-items: flex-start">
+<span style="flex-shrink: 0; font-family: 'JetBrains Mono',monospace; font-size: 12px; font-weight: 500; color: #5C584F; border: 1px solid #A8A08F; border-radius: 6px; padding: 3px 8px">BEFORE</span>
+<p style="margin: 0; font-size: 15px; line-height: 1.8; color: #3F3C36">商品名リストを見ながら、関連するキーワードを1つずつ頭で連想して入力していた。</p>
+</div>
+<div style="display: flex; gap: 12px; align-items: flex-start">
+<span style="flex-shrink: 0; font-family: 'JetBrains Mono',monospace; font-size: 12px; font-weight: 500; color: #FFFFFF; background: #9A4A1B; border-radius: 6px; padding: 4px 9px">AFTER</span>
+<p style="margin: 0; font-size: 15px; line-height: 1.8; color: #1E1D1A; font-weight: 500">Excelに商品名を入れてダブルクリックするだけで、英語・日本語のキーワード候補が一覧で出てくる。</p>
+</div>
+</div>
+
+
+</div>
+<div style="font-size: 15px; font-weight: 700; color: #9A4A1B">成果：連想作業を、ダブルクリック1回に</div>
+</article>
+
+<article style="background: #FFFDF8; border: 1px solid #D9D2C3; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span style="font-size: 13px; font-weight: 700; color: #FFFFFF; background: #2D4A7A; padding: 5px 12px; border-radius: 999px">楽天ROOM｜テンプレート</span>
+<span style="font-family: 'JetBrains Mono',monospace; font-size: 13px; color: #5C584F">06</span>
+</div>
+<h3 style="margin: 0; font-family: 'Zen Old Mincho',serif; font-size: 28px; font-weight: 700; line-height: 1.4">投稿テンプレート集と朝の時間割</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #3F3C36">主婦層向けの投稿文テンプレート12パターンと、朝7〜9時の作業時間割。</p>
+<div style="background: #F3EFE6; border-radius: 12px; padding: 20px; min-height: 230px; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px">
+
+<div style="display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; gap: 12px; align-items: flex-start">
+<span style="flex-shrink: 0; font-family: 'JetBrains Mono',monospace; font-size: 12px; font-weight: 500; color: #5C584F; border: 1px solid #A8A08F; border-radius: 6px; padding: 3px 8px">BEFORE</span>
+<p style="margin: 0; font-size: 15px; line-height: 1.8; color: #3F3C36">毎回ゼロから投稿文を考え、投稿といいね周りの時間もバラバラだった。</p>
+</div>
+<div style="display: flex; gap: 12px; align-items: flex-start">
+<span style="flex-shrink: 0; font-family: 'JetBrains Mono',monospace; font-size: 12px; font-weight: 500; color: #FFFFFF; background: #9A4A1B; border-radius: 6px; padding: 4px 9px">AFTER</span>
+<p style="margin: 0; font-size: 15px; line-height: 1.8; color: #1E1D1A; font-weight: 500">[ ]の中を埋めるだけで1分以内に投稿文が完成。時間帯を固定して作業をまとめ、作業時間を圧縮。</p>
+</div>
+</div>
+
+
+</div>
+<div style="font-size: 15px; font-weight: 700; color: #9A4A1B">成果：投稿文づくりを1分以内に</div>
+</article>
+
+</div>
+</section>
+
+<!-- HOW I WORK -->
+<section style="padding: 72px 80px 24px; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'JetBrains Mono',monospace; font-size: 13px; letter-spacing: 0.16em; color: #9A4A1B">HOW I WORK</div>
+<h2 style="margin: 0; font-family: 'Zen Old Mincho',serif; font-size: 40px; font-weight: 700">進め方</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px">
+<div style="border-top: 3px solid #2D4A7A; padding-top: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'JetBrains Mono',monospace; font-size: 14px; color: #5C584F">01</div>
+<div style="font-size: 19px; font-weight: 700">作業を工程に分ける</div>
+<p style="margin: 0; font-size: 14px; line-height: 1.8; color: #3F3C36">毎日の作業を振り返り、「くり返している」「時間がかかる」工程を見つけます。振り返りアプリ自体もこのために作りました。</p>
+</div>
+<div style="border-top: 3px solid #2D4A7A; padding-top: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'JetBrains Mono',monospace; font-size: 14px; color: #5C584F">02</div>
+<div style="font-size: 19px; font-weight: 700">人と機械の分担を決める</div>
+<p style="margin: 0; font-size: 14px; line-height: 1.8; color: #3F3C36">APIで取れないデータや人の判断が必要な部分は無理に自動化せず、手作業を最小限の1操作にまとめます。</p>
+</div>
+<div style="border-top: 3px solid #2D4A7A; padding-top: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'JetBrains Mono',monospace; font-size: 14px; color: #5C584F">03</div>
+<div style="font-size: 19px; font-weight: 700">作って、使って、直す</div>
+<p style="margin: 0; font-size: 14px; line-height: 1.8; color: #3F3C36">実際に使って出たエラーや使いにくさをその場で直します。通信エラーが出たアプリは、通信不要の方式に作り替えました。</p>
+</div>
+<div style="border-top: 3px solid #2D4A7A; padding-top: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'JetBrains Mono',monospace; font-size: 14px; color: #5C584F">04</div>
+<div style="font-size: 19px; font-weight: 700">誰でも使える形にする</div>
+<p style="margin: 0; font-size: 14px; line-height: 1.8; color: #3F3C36">ダブルクリックやドラッグ＆ドロップで動く形にし、用語集つきの使い方ガイドを添えて、パソコンが苦手な人でも使えるようにします。</p>
+</div>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section style="padding: 72px 80px 72px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px">
+<div style="background: #FFFDF8; border: 1px solid #D9D2C3; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+<div style="font-family: 'JetBrains Mono',monospace; font-size: 13px; letter-spacing: 0.16em; color: #9A4A1B">FOR EVERYONE</div>
+<h2 style="margin: 0; font-family: 'Zen Old Mincho',serif; font-size: 28px; font-weight: 700">お任せいただけること</h2>
+<p style="margin: 0; font-size: 15px; line-height: 1.9; color: #3F3C36">eBay輸出などのリサーチ業務の効率化、計算シートからスプレッドシートへの自動入力、楽天ROOMの商品リサーチと投稿文づくりの自動化、毎日の手作業の洗い出しと改善の提案。専門用語を使わずに説明し、使い方ガイドまで用意します。</p>
+</div>
+<div style="background: #1E1D1A; color: #F3EFE6; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+<div style="font-family: 'JetBrains Mono',monospace; font-size: 13px; letter-spacing: 0.16em; color: #E3A57C">FOR ENGINEERS</div>
+<h2 style="margin: 0; font-family: 'Zen Old Mincho',serif; font-size: 28px; font-weight: 700">使用技術</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+
+<span style="font-family: 'JetBrains Mono','Zen Kaku Gothic New',monospace; font-size: 13px; border: 1px solid #5C584F; border-radius: 6px; padding: 6px 10px; color: #F3EFE6">Python</span>
+
+<span style="font-family: 'JetBrains Mono','Zen Kaku Gothic New',monospace; font-size: 13px; border: 1px solid #5C584F; border-radius: 6px; padding: 6px 10px; color: #F3EFE6">pandas</span>
+
+<span style="font-family: 'JetBrains Mono','Zen Kaku Gothic New',monospace; font-size: 13px; border: 1px solid #5C584F; border-radius: 6px; padding: 6px 10px; color: #F3EFE6">openpyxl</span>
+
+<span style="font-family: 'JetBrains Mono','Zen Kaku Gothic New',monospace; font-size: 13px; border: 1px solid #5C584F; border-radius: 6px; padding: 6px 10px; color: #F3EFE6">YAML</span>
+
+<span style="font-family: 'JetBrains Mono','Zen Kaku Gothic New',monospace; font-size: 13px; border: 1px solid #5C584F; border-radius: 6px; padding: 6px 10px; color: #F3EFE6">Windowsバッチ（.bat）</span>
+
+<span style="font-family: 'JetBrains Mono','Zen Kaku Gothic New',monospace; font-size: 13px; border: 1px solid #5C584F; border-radius: 6px; padding: 6px 10px; color: #F3EFE6">Google Apps Script</span>
+
+<span style="font-family: 'JetBrains Mono','Zen Kaku Gothic New',monospace; font-size: 13px; border: 1px solid #5C584F; border-radius: 6px; padding: 6px 10px; color: #F3EFE6">JavaScript</span>
+
+<span style="font-family: 'JetBrains Mono','Zen Kaku Gothic New',monospace; font-size: 13px; border: 1px solid #5C584F; border-radius: 6px; padding: 6px 10px; color: #F3EFE6">HTML／CSS</span>
+
+<span style="font-family: 'JetBrains Mono','Zen Kaku Gothic New',monospace; font-size: 13px; border: 1px solid #5C584F; border-radius: 6px; padding: 6px 10px; color: #F3EFE6">楽天API</span>
+
+<span style="font-family: 'JetBrains Mono','Zen Kaku Gothic New',monospace; font-size: 13px; border: 1px solid #5C584F; border-radius: 6px; padding: 6px 10px; color: #F3EFE6">OpenAI API</span>
+
+<span style="font-family: 'JetBrains Mono','Zen Kaku Gothic New',monospace; font-size: 13px; border: 1px solid #5C584F; border-radius: 6px; padding: 6px 10px; color: #F3EFE6">eBay Browse API（設計）</span>
+
+<span style="font-family: 'JetBrains Mono','Zen Kaku Gothic New',monospace; font-size: 13px; border: 1px solid #5C584F; border-radius: 6px; padding: 6px 10px; color: #F3EFE6">Excel／スプレッドシート関数</span>
+
+<span style="font-family: 'JetBrains Mono','Zen Kaku Gothic New',monospace; font-size: 13px; border: 1px solid #5C584F; border-radius: 6px; padding: 6px 10px; color: #F3EFE6">GitHub／clasp</span>
+
+</div>
+<p style="margin: 0; font-size: 14px; line-height: 1.8; color: #CFC7B6">AI（Claude）と協働して設計・実装。コードはGitHubで管理しています。</p>
+</div>
+</section>
+
+<!-- CONTACT -->
+<footer style="flex-grow: 1; background: #1E1D1A; color: #F3EFE6; padding: 72px 80px; display: flex; flex-direction: column; gap: 20px">
+<div style="font-family: 'JetBrains Mono',monospace; font-size: 13px; letter-spacing: 0.16em; color: #E3A57C">CONTACT</div>
+<h2 style="margin: 0; font-family: 'Zen Old Mincho',serif; font-size: 40px; font-weight: 700">「この作業、なんとかならないかな」から、ご相談ください。</h2>
+<div style="display: flex; gap: 40px; font-size: 16px; color: #CFC7B6">
+<span>メール：[メールアドレス]</span>
+<span>クラウドワークス：[プロフィールURL]</span>
+<span>SNS：[アカウント]</span>
+</div>
+</footer>
+</div>
+</div>
+<div class="mode mode-tech">
+<div style="width: 100%; min-width: 1100px; min-height: 5300px; box-sizing: border-box; display: flex; flex-direction: column; background: #F3EFE6; color: #1E1D1A; font-family: 'Zen Kaku Gothic New','Hiragino Sans','Yu Gothic',sans-serif">
+
+<!-- HERO -->
+<header style="padding: 72px 80px 64px; display: flex; flex-direction: column; gap: 28px; border-bottom: 1px solid #D9D2C3">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<div style="font-family: 'JetBrains Mono',monospace; font-size: 13px; letter-spacing: 0.16em; color: #5C584F">PORTFOLIO — 2026.07–2026.09</div>
+<div style="display: flex; align-items: center; gap: 12px">
+<span style="font-size: 14px; color: #5C584F">表示モード</span>
+<div style="display: flex; background: #E6E0D2; border-radius: 999px; padding: 4px; gap: 4px">
+<button type="button" aria-pressed="false" style="font-family:inherit;font-size:14px;font-weight:500;border:none;border-radius:999px;padding:10px 18px;min-height:44px;cursor:pointer;background:transparent;color:#3F3C36" data-mode="plain">わかりやすく</button>
+<button type="button" aria-pressed="true" style="font-family:inherit;font-size:14px;font-weight:700;border:none;border-radius:999px;padding:10px 18px;min-height:44px;cursor:pointer;background:#2D4A7A;color:#FFFFFF" data-mode="tech">技術くわしく</button>
+</div>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 18px; max-width: 1000px">
+<div style="font-size: 18px; color: #2D4A7A; font-weight: 700">[お名前]｜EC業務の効率化・自動化</div>
+<h1 style="margin: 0; font-family: 'Zen Old Mincho','Hiragino Mincho ProN',serif; font-weight: 900; font-size: 64px; line-height: 1.25; letter-spacing: 0.01em">リサーチも、計算も、転記も。<br>手作業の時間を、仕組みで減らす。</h1>
+<p style="margin: 0; font-size: 19px; line-height: 1.9; color: #3F3C36; max-width: 880px">eBay輸出リサーチや楽天ROOM運用で毎日くり返していた作業を、Claudeと一緒に自動化してきた記録です。プログラミング未経験から始めて、「作る」だけでなく「パソコンが苦手な人でも使える形に仕上げる」ところまでを大切にしています。</p>
+<p style="margin: 0; font-size: 15px; color: #5C584F">右上の表示モードで、各実績の説明を「わかりやすく（ビフォー・アフター）」と「技術くわしく（使った技術）」に切り替えられます。</p>
+</div>
+</header>
+
+<!-- STATS -->
+<section style="padding: 40px 80px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; border-bottom: 1px solid #D9D2C3">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<div style="font-family: 'Zen Old Mincho',serif; font-size: 52px; font-weight: 900; color: #2D4A7A">5</div>
+<div style="font-size: 15px; color: #3F3C36">実際に動くツール・アプリ</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<div style="font-family: 'Zen Old Mincho',serif; font-size: 52px; font-weight: 900; color: #2D4A7A">3</div>
+<div style="font-size: 15px; color: #3F3C36">自動化したeBayリサーチ工程</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<div style="font-family: 'Zen Old Mincho',serif; font-size: 52px; font-weight: 900; color: #2D4A7A">1回</div>
+<div style="font-size: 15px; color: #3F3C36">紹介文づくりに必要なボタン操作</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<div style="font-family: 'Zen Old Mincho',serif; font-size: 52px; font-weight: 900; color: #2D4A7A">4倍</div>
+<div style="font-size: 15px; color: #3F3C36">1時間あたりのリサーチ件数（1件→4件）</div>
+</div>
+</section>
+
+<!-- EBAY SYSTEM -->
+<section style="padding: 72px 80px 24px; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'JetBrains Mono',monospace; font-size: 13px; letter-spacing: 0.16em; color: #9A4A1B">MAIN PROJECT</div>
+<h2 style="margin: 0; font-family: 'Zen Old Mincho',serif; font-size: 40px; font-weight: 700">eBayリサーチ 時間短縮システム</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.9; color: #3F3C36; max-width: 900px">「売れる商品を探す→仕入れ先を探す→利益を計算する→シートに記入する」というリサーチ業務を工程ごとに分解しました。リサーチ項目の1つで時間のかかっていた「7割ライン」の判定（同じ商品の販売価格の中で、自分の販売価格が7割のラインより安いか）や、利益計算シートからクライアント提出用シートへの転記など、機械に任せられる部分を自動化しています。人の判断が必要なところは残し、それ以外の手作業を減らす設計です。</p>
+<div style="display: flex; align-items: baseline; gap: 16px; background: #FFFDF8; border: 1px solid #D9D2C3; border-radius: 14px; padding: 20px 24px; align-self: flex-start"><span style="font-size: 15px; font-weight: 700; color: #3F3C36">成果</span><span style="font-family: 'Zen Old Mincho',serif; font-size: 30px; font-weight: 900; color: #2D4A7A">1時間1件 → 1時間4件</span><span style="font-size: 15px; color: #3F3C36">1件あたり約60分かかっていたリサーチが、約15分に。</span></div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px">
+
+<div style="background: #FFFDF8; border: 1px solid #D9D2C3; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 10px; min-height: 250px; box-sizing: border-box">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<span style="font-family: 'JetBrains Mono',monospace; font-size: 14px; color: #5C584F">STEP 01</span>
+<span style="font-size:12px;font-weight:700;color:#FFFFFF;background:#2D4A7A;padding:4px 10px;border-radius:999px">自動化</span>
+</div>
+<div style="font-size: 19px; font-weight: 700; line-height: 1.4">キーワード連想</div>
+<p style="margin: 0; font-size: 14px; line-height: 1.8; color: #3F3C36">商品名を入れるだけで、eBayの検索に使うキーワード候補を英語・日本語で自動作成。</p>
+</div>
+
+<div style="background: #FFFDF8; border: 1px solid #D9D2C3; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 10px; min-height: 250px; box-sizing: border-box">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<span style="font-family: 'JetBrains Mono',monospace; font-size: 14px; color: #5C584F">STEP 02</span>
+<span style="font-size:12px;font-weight:700;color:#FFFFFF;background:#2D4A7A;padding:4px 10px;border-radius:999px">自動化</span>
+</div>
+<div style="font-size: 19px; font-weight: 700; line-height: 1.4">売れ筋商品のピックアップ</div>
+<p style="margin: 0; font-size: 14px; line-height: 1.8; color: #3F3C36">$100以上・日本からの出品・2個以上売れた商品を、データから自動で抽出して並び替え。</p>
+</div>
+
+<div style="background: #FFFDF8; border: 1px solid #D9D2C3; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 10px; min-height: 250px; box-sizing: border-box">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<span style="font-family: 'JetBrains Mono',monospace; font-size: 14px; color: #5C584F">STEP 03</span>
+<span style="font-size:12px;font-weight:700;color:#5C584F;border:1px solid #A8A08F;padding:3px 10px;border-radius:999px">人が判断</span>
+</div>
+<div style="font-size: 19px; font-weight: 700; line-height: 1.4">仕入れ先探し</div>
+<p style="margin: 0; font-size: 14px; line-height: 1.8; color: #3F3C36">商品の状態や付属品の見極めは人が担当。一括検索サイトと検索条件の工夫で探す時間を短縮。</p>
+</div>
+
+<div style="background: #FFFDF8; border: 1px solid #D9D2C3; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 10px; min-height: 250px; box-sizing: border-box">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<span style="font-family: 'JetBrains Mono',monospace; font-size: 14px; color: #5C584F">STEP 04</span>
+<span style="font-size:12px;font-weight:700;color:#FFFFFF;background:#2D4A7A;padding:4px 10px;border-radius:999px">一部自動</span>
+</div>
+<div style="font-size: 19px; font-weight: 700; line-height: 1.4">7割確認・利益計算→提出</div>
+<p style="margin: 0; font-size: 14px; line-height: 1.8; color: #3F3C36">7割ラインの確認を自動化。利益計算シートへの入力は人が行い、その結果をクライアント提出用のスプレッドシートへ自動で転記。</p>
+</div>
+
+</div>
+</section>
+
+<!-- SEVENTY -->
+<section style="padding: 48px 80px 24px; display: flex; flex-direction: column; gap: 24px">
+<div style="background: #FFFDF8; border: 1px solid #D9D2C3; border-radius: 16px; padding: 36px; display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'JetBrains Mono',monospace; font-size: 13px; letter-spacing: 0.16em; color: #9A4A1B">CLOSE-UP</div>
+<h3 style="margin: 0; font-family: 'Zen Old Mincho',serif; font-size: 30px; font-weight: 700">7割ライン確認：1商品ごとの7つの手作業を自動化</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.9; color: #3F3C36">「7割ライン確認」は、利益計算と並ぶリサーチ項目の1つです（どちらが先でも可）。どちらもカスタムリンク（条件を設定したeBayの検索結果ページ）で検索したあとに行います。これまで商品ごとに下の7つの手順を手作業でくり返していたところを、仕組みで処理できるようにしました。</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 12px">
+
+<div style="background: #F3EFE6; border-radius: 12px; padding: 16px 14px; display: flex; flex-direction: column; gap: 10px; min-height: 230px; box-sizing: border-box">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<span style="font-family: 'Zen Old Mincho',serif; font-size: 24px; font-weight: 900; color: #1E1D1A">①</span>
+<span style="font-size:12px;font-weight:700;color:#5C584F;border:1px solid #A8A08F;padding:3px 10px;border-radius:999px">人</span>
+</div>
+<p style="margin: 0; font-size: 13.5px; line-height: 1.75; color: #1E1D1A">カスタムリンクのページで、ページ内検索（Ctrl＋F）で「From Japan」を検索</p>
+</div>
+
+<div style="background: #F3EFE6; border-radius: 12px; padding: 16px 14px; display: flex; flex-direction: column; gap: 10px; min-height: 230px; box-sizing: border-box">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<span style="font-family: 'Zen Old Mincho',serif; font-size: 24px; font-weight: 900; color: #1E1D1A">②</span>
+<span style="font-size:12px;font-weight:700;color:#FFFFFF;background:#2D4A7A;padding:4px 10px;border-radius:999px">自動</span>
+</div>
+<p style="margin: 0; font-size: 13.5px; line-height: 1.75; color: #1E1D1A">日本から出品されている同じ商品が何個あるかを数える</p>
+</div>
+
+<div style="background: #F3EFE6; border-radius: 12px; padding: 16px 14px; display: flex; flex-direction: column; gap: 10px; min-height: 230px; box-sizing: border-box">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<span style="font-family: 'Zen Old Mincho',serif; font-size: 24px; font-weight: 900; color: #1E1D1A">③</span>
+<span style="font-size:12px;font-weight:700;color:#FFFFFF;background:#2D4A7A;padding:4px 10px;border-radius:999px">自動</span>
+</div>
+<p style="margin: 0; font-size: 13.5px; line-height: 1.75; color: #1E1D1A">その個数に0.7をかける（小数点以下は切り捨て）</p>
+</div>
+
+<div style="background: #F3EFE6; border-radius: 12px; padding: 16px 14px; display: flex; flex-direction: column; gap: 10px; min-height: 230px; box-sizing: border-box">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<span style="font-family: 'Zen Old Mincho',serif; font-size: 24px; font-weight: 900; color: #1E1D1A">④</span>
+<span style="font-size:12px;font-weight:700;color:#FFFFFF;background:#2D4A7A;padding:4px 10px;border-radius:999px">自動</span>
+</div>
+<p style="margin: 0; font-size: 13.5px; line-height: 1.75; color: #1E1D1A">日本人セラーの最安値から順に、③の数だけ数える</p>
+</div>
+
+<div style="background: #F3EFE6; border-radius: 12px; padding: 16px 14px; display: flex; flex-direction: column; gap: 10px; min-height: 230px; box-sizing: border-box">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<span style="font-family: 'Zen Old Mincho',serif; font-size: 24px; font-weight: 900; color: #1E1D1A">⑤</span>
+<span style="font-size:12px;font-weight:700;color:#FFFFFF;background:#2D4A7A;padding:4px 10px;border-radius:999px">自動</span>
+</div>
+<p style="margin: 0; font-size: 13.5px; line-height: 1.75; color: #1E1D1A">その商品の販売価格を確認（送料の設定があれば足す）</p>
+</div>
+
+<div style="background: #F3EFE6; border-radius: 12px; padding: 16px 14px; display: flex; flex-direction: column; gap: 10px; min-height: 230px; box-sizing: border-box">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<span style="font-family: 'Zen Old Mincho',serif; font-size: 24px; font-weight: 900; color: #1E1D1A">⑥</span>
+<span style="font-size:12px;font-weight:700;color:#FFFFFF;background:#2D4A7A;padding:4px 10px;border-radius:999px">自動</span>
+</div>
+<p style="margin: 0; font-size: 13.5px; line-height: 1.75; color: #1E1D1A">⑤の価格と、リサーチした商品の販売価格を比べる</p>
+</div>
+
+<div style="background: #F3EFE6; border-radius: 12px; padding: 16px 14px; display: flex; flex-direction: column; gap: 10px; min-height: 230px; box-sizing: border-box">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<span style="font-family: 'Zen Old Mincho',serif; font-size: 24px; font-weight: 900; color: #1E1D1A">⑦</span>
+<span style="font-size:12px;font-weight:700;color:#FFFFFF;background:#2D4A7A;padding:4px 10px;border-radius:999px">自動</span>
+</div>
+<p style="margin: 0; font-size: 13.5px; line-height: 1.75; color: #1E1D1A">リサーチ商品のほうが安ければ提出用シートへ記入。高ければ別の商品へ</p>
+</div>
+
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px; border-top: 1px solid #D9D2C3; padding-top: 18px">
+<div style="font-family: 'JetBrains Mono',monospace; font-size: 12px; color: #5C584F; letter-spacing: 0.1em">TECH NOTES</div>
+<p style="margin: 0; font-size: 15px; line-height: 1.8; color: #1E1D1A">判定ライン＝FLOOR（日本からの同一商品の件数 × 0.7）番目に安い日本人セラーの価格＋送料。この価格とリサーチ商品の販売価格を比較し、安い場合のみ提出用シートへ自動で転記。[使用した技術を記入]</p>
+</div>
+</div>
+</section>
+
+<!-- FEATURED -->
+<section style="padding: 56px 80px 24px; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'JetBrains Mono',monospace; font-size: 13px; letter-spacing: 0.16em; color: #9A4A1B">FEATURED WORKS</div>
+<h2 style="margin: 0; font-family: 'Zen Old Mincho',serif; font-size: 40px; font-weight: 700">主な実績</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px">
+
+<article style="background: #FFFDF8; border: 1px solid #D9D2C3; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span style="font-size: 13px; font-weight: 700; color: #FFFFFF; background: #2D4A7A; padding: 5px 12px; border-radius: 999px">eBay｜自動化ツール</span>
+<span style="font-family: 'JetBrains Mono',monospace; font-size: 13px; color: #5C584F">01</span>
+</div>
+<h3 style="margin: 0; font-family: 'Zen Old Mincho',serif; font-size: 28px; font-weight: 700; line-height: 1.4">売れ筋商品ピックアップの自動化</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #3F3C36">条件に合う売れ筋商品だけを、ダウンロードしたデータから一瞬で抜き出すツール。</p>
+<div style="background: #F3EFE6; border-radius: 12px; padding: 20px; min-height: 230px; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px">
+
+
+<div style="display: flex; flex-direction: column; gap: 12px">
+<div style="font-family: 'JetBrains Mono',monospace; font-size: 12px; color: #5C584F; letter-spacing: 0.1em">TECH NOTES</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+
+<span style="font-size: 14px; line-height: 1.5; background: #FFFDF8; border: 1px solid #CFC7B6; border-radius: 8px; padding: 6px 10px">Python（pandas）</span>
+
+<span style="font-size: 14px; line-height: 1.5; background: #FFFDF8; border: 1px solid #CFC7B6; border-radius: 8px; padding: 6px 10px">YAML設定ファイルで条件を外出し</span>
+
+<span style="font-size: 14px; line-height: 1.5; background: #FFFDF8; border: 1px solid #CFC7B6; border-radius: 8px; padding: 6px 10px">列名の表記ゆれ・見出し行なしを自動判定</span>
+
+<span style="font-size: 14px; line-height: 1.5; background: #FFFDF8; border: 1px solid #CFC7B6; border-radius: 8px; padding: 6px 10px">.batファイルでドラッグ＆ドロップ実行</span>
+
+<span style="font-size: 14px; line-height: 1.5; background: #FFFDF8; border: 1px solid #CFC7B6; border-radius: 8px; padding: 6px 10px">API取得できない売上データは人の1操作に残す設計</span>
+
+<span style="font-size: 14px; line-height: 1.5; background: #FFFDF8; border: 1px solid #CFC7B6; border-radius: 8px; padding: 6px 10px">用語集つき使い方ガイド</span>
+
+</div>
+</div>
+
+</div>
+<div style="font-size: 15px; font-weight: 700; color: #9A4A1B">成果：人に残る作業はデータのダウンロード1回だけ</div>
+</article>
+
+<article style="background: #FFFDF8; border: 1px solid #D9D2C3; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span style="font-size: 13px; font-weight: 700; color: #FFFFFF; background: #2D4A7A; padding: 5px 12px; border-radius: 999px">eBay｜自動化ツール</span>
+<span style="font-family: 'JetBrains Mono',monospace; font-size: 13px; color: #5C584F">02</span>
+</div>
+<h3 style="margin: 0; font-family: 'Zen Old Mincho',serif; font-size: 28px; font-weight: 700; line-height: 1.4">利益計算シート→提出用シートへの自動転記</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #3F3C36">利益計算シートで出た結果を、クライアント提出用のスプレッドシートへ一瞬で転記する仕組み。7割ラインの確認も自動化。</p>
+<div style="background: #F3EFE6; border-radius: 12px; padding: 20px; min-height: 230px; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px">
+
+
+<div style="display: flex; flex-direction: column; gap: 12px">
+<div style="font-family: 'JetBrains Mono',monospace; font-size: 12px; color: #5C584F; letter-spacing: 0.1em">TECH NOTES</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+
+<span style="font-size: 14px; line-height: 1.5; background: #FFFDF8; border: 1px solid #CFC7B6; border-radius: 8px; padding: 6px 10px">同一商品の販売価格を並べ7割ラインの価格を自動抽出</span>
+
+<span style="font-size: 14px; line-height: 1.5; background: #FFFDF8; border: 1px solid #CFC7B6; border-radius: 8px; padding: 6px 10px">販売価格が7割ラインより安いかを自動判定</span>
+
+<span style="font-size: 14px; line-height: 1.5; background: #FFFDF8; border: 1px solid #CFC7B6; border-radius: 8px; padding: 6px 10px">利益計算シート（クライアント支給）への入力は手入力のまま</span>
+
+<span style="font-size: 14px; line-height: 1.5; background: #FFFDF8; border: 1px solid #CFC7B6; border-radius: 8px; padding: 6px 10px">利益計算シート→クライアント提出用シートへの自動転記</span>
+
+<span style="font-size: 14px; line-height: 1.5; background: #FFFDF8; border: 1px solid #CFC7B6; border-radius: 8px; padding: 6px 10px">シート間の項目の対応づけ</span>
+
+<span style="font-size: 14px; line-height: 1.5; background: #FFFDF8; border: 1px solid #CFC7B6; border-radius: 8px; padding: 6px 10px">[使用した技術を記入：例 GAS／関数]</span>
+
+</div>
+</div>
+
+</div>
+<div style="font-size: 15px; font-weight: 700; color: #9A4A1B">成果：7割ライン確認と提出シートへの転記を一瞬に</div>
+</article>
+
+<article style="background: #FFFDF8; border: 1px solid #D9D2C3; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span style="font-size: 13px; font-weight: 700; color: #FFFFFF; background: #2D4A7A; padding: 5px 12px; border-radius: 999px">楽天ROOM｜自動化ツール</span>
+<span style="font-family: 'JetBrains Mono',monospace; font-size: 13px; color: #5C584F">03</span>
+</div>
+<h3 style="margin: 0; font-family: 'Zen Old Mincho',serif; font-size: 28px; font-weight: 700; line-height: 1.4">商品リサーチ＆紹介文の自動化</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #3F3C36">毎朝、紹介する商品候補がスプレッドシートに自動で並び、紹介文もボタン1つで作れる仕組み。</p>
+<div style="background: #F3EFE6; border-radius: 12px; padding: 20px; min-height: 230px; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px">
+
+
+<div style="display: flex; flex-direction: column; gap: 12px">
+<div style="font-family: 'JetBrains Mono',monospace; font-size: 12px; color: #5C584F; letter-spacing: 0.1em">TECH NOTES</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+
+<span style="font-size: 14px; line-height: 1.5; background: #FFFDF8; border: 1px solid #CFC7B6; border-radius: 8px; padding: 6px 10px">Google Apps Script</span>
+
+<span style="font-size: 14px; line-height: 1.5; background: #FFFDF8; border: 1px solid #CFC7B6; border-radius: 8px; padding: 6px 10px">楽天 商品検索API／ランキングAPI</span>
+
+<span style="font-size: 14px; line-height: 1.5; background: #FFFDF8; border: 1px solid #CFC7B6; border-radius: 8px; padding: 6px 10px">時間主導型トリガーで毎日自動実行</span>
+
+<span style="font-size: 14px; line-height: 1.5; background: #FFFDF8; border: 1px solid #CFC7B6; border-radius: 8px; padding: 6px 10px">在庫切れ・低評価・重複の除外</span>
+
+<span style="font-size: 14px; line-height: 1.5; background: #FFFDF8; border: 1px solid #CFC7B6; border-radius: 8px; padding: 6px 10px">OpenAI APIで紹介文2パターン生成</span>
+
+<span style="font-size: 14px; line-height: 1.5; background: #FFFDF8; border: 1px solid #CFC7B6; border-radius: 8px; padding: 6px 10px">スプレッドシートのカスタムメニュー</span>
+
+<span style="font-size: 14px; line-height: 1.5; background: #FFFDF8; border: 1px solid #CFC7B6; border-radius: 8px; padding: 6px 10px">clasp＋GitHubで管理</span>
+
+</div>
+</div>
+
+</div>
+<div style="font-size: 15px; font-weight: 700; color: #9A4A1B">成果：商品ごとの手作業の往復を、ボタン1回に</div>
+</article>
+
+<article style="background: #FFFDF8; border: 1px solid #D9D2C3; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span style="font-size: 13px; font-weight: 700; color: #FFFFFF; background: #2D4A7A; padding: 5px 12px; border-radius: 999px">Webアプリ</span>
+<span style="font-family: 'JetBrains Mono',monospace; font-size: 13px; color: #5C584F">04</span>
+</div>
+<h3 style="margin: 0; font-family: 'Zen Old Mincho',serif; font-size: 28px; font-weight: 700; line-height: 1.4">一日の振り返り分析アプリ「夕凪」</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #3F3C36">今日やったことを書くと、自動化できそうな作業と、その方法を提案してくれるアプリ。</p>
+<div style="background: #F3EFE6; border-radius: 12px; padding: 20px; min-height: 230px; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px">
+
+
+<div style="display: flex; flex-direction: column; gap: 12px">
+<div style="font-family: 'JetBrains Mono',monospace; font-size: 12px; color: #5C584F; letter-spacing: 0.1em">TECH NOTES</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+
+<span style="font-size: 14px; line-height: 1.5; background: #FFFDF8; border: 1px solid #CFC7B6; border-radius: 8px; padding: 6px 10px">HTML／CSS／JavaScript（1ファイル）</span>
+
+<span style="font-size: 14px; line-height: 1.5; background: #FFFDF8; border: 1px solid #CFC7B6; border-radius: 8px; padding: 6px 10px">当初はAI API連携</span>
+
+<span style="font-size: 14px; line-height: 1.5; background: #FFFDF8; border: 1px solid #CFC7B6; border-radius: 8px; padding: 6px 10px">通信エラーを受けてキーワード辞書方式に再設計</span>
+
+<span style="font-size: 14px; line-height: 1.5; background: #FFFDF8; border: 1px solid #CFC7B6; border-radius: 8px; padding: 6px 10px">オフラインで即時に判定</span>
+
+<span style="font-size: 14px; line-height: 1.5; background: #FFFDF8; border: 1px solid #CFC7B6; border-radius: 8px; padding: 6px 10px">ブラウザ内への履歴保存・個別／一括削除</span>
+
+</div>
+</div>
+
+</div>
+<div style="font-size: 15px; font-weight: 700; color: #9A4A1B">成果：次の自動化テーマを生み出す仕組み</div>
+</article>
+
+<article style="background: #FFFDF8; border: 1px solid #D9D2C3; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span style="font-size: 13px; font-weight: 700; color: #FFFFFF; background: #2D4A7A; padding: 5px 12px; border-radius: 999px">eBay｜自動化ツール</span>
+<span style="font-family: 'JetBrains Mono',monospace; font-size: 13px; color: #5C584F">05</span>
+</div>
+<h3 style="margin: 0; font-family: 'Zen Old Mincho',serif; font-size: 28px; font-weight: 700; line-height: 1.4">キーワード連想ツール</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #3F3C36">商品名から、eBayの検索に使うキーワード候補を自動で作るツール。</p>
+<div style="background: #F3EFE6; border-radius: 12px; padding: 20px; min-height: 230px; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px">
+
+
+<div style="display: flex; flex-direction: column; gap: 12px">
+<div style="font-family: 'JetBrains Mono',monospace; font-size: 12px; color: #5C584F; letter-spacing: 0.1em">TECH NOTES</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+
+<span style="font-size: 14px; line-height: 1.5; background: #FFFDF8; border: 1px solid #CFC7B6; border-radius: 8px; padding: 6px 10px">Python</span>
+
+<span style="font-size: 14px; line-height: 1.5; background: #FFFDF8; border: 1px solid #CFC7B6; border-radius: 8px; padding: 6px 10px">openpyxl・pandasでExcel入出力</span>
+
+<span style="font-size: 14px; line-height: 1.5; background: #FFFDF8; border: 1px solid #CFC7B6; border-radius: 8px; padding: 6px 10px">.batファイルでダブルクリック実行</span>
+
+<span style="font-size: 14px; line-height: 1.5; background: #FFFDF8; border: 1px solid #CFC7B6; border-radius: 8px; padding: 6px 10px">AIキーワード生成＋eBay Browse API検証の4モジュール構成を設計</span>
+
+</div>
+</div>
+
+</div>
+<div style="font-size: 15px; font-weight: 700; color: #9A4A1B">成果：連想作業を、ダブルクリック1回に</div>
+</article>
+
+<article style="background: #FFFDF8; border: 1px solid #D9D2C3; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span style="font-size: 13px; font-weight: 700; color: #FFFFFF; background: #2D4A7A; padding: 5px 12px; border-radius: 999px">楽天ROOM｜テンプレート</span>
+<span style="font-family: 'JetBrains Mono',monospace; font-size: 13px; color: #5C584F">06</span>
+</div>
+<h3 style="margin: 0; font-family: 'Zen Old Mincho',serif; font-size: 28px; font-weight: 700; line-height: 1.4">投稿テンプレート集と朝の時間割</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #3F3C36">主婦層向けの投稿文テンプレート12パターンと、朝7〜9時の作業時間割。</p>
+<div style="background: #F3EFE6; border-radius: 12px; padding: 20px; min-height: 230px; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px">
+
+
+<div style="display: flex; flex-direction: column; gap: 12px">
+<div style="font-family: 'JetBrains Mono',monospace; font-size: 12px; color: #5C584F; letter-spacing: 0.1em">TECH NOTES</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+
+<span style="font-size: 14px; line-height: 1.5; background: #FFFDF8; border: 1px solid #CFC7B6; border-radius: 8px; padding: 6px 10px">Markdownテンプレート（12パターン）</span>
+
+<span style="font-size: 14px; line-height: 1.5; background: #FFFDF8; border: 1px solid #CFC7B6; border-radius: 8px; padding: 6px 10px">「夕凪」の分析結果から着手</span>
+
+<span style="font-size: 14px; line-height: 1.5; background: #FFFDF8; border: 1px solid #CFC7B6; border-radius: 8px; padding: 6px 10px">のちにGASによる紹介文の自動生成へ発展</span>
+
+</div>
+</div>
+
+</div>
+<div style="font-size: 15px; font-weight: 700; color: #9A4A1B">成果：投稿文づくりを1分以内に</div>
+</article>
+
+</div>
+</section>
+
+<!-- HOW I WORK -->
+<section style="padding: 72px 80px 24px; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'JetBrains Mono',monospace; font-size: 13px; letter-spacing: 0.16em; color: #9A4A1B">HOW I WORK</div>
+<h2 style="margin: 0; font-family: 'Zen Old Mincho',serif; font-size: 40px; font-weight: 700">進め方</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px">
+<div style="border-top: 3px solid #2D4A7A; padding-top: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'JetBrains Mono',monospace; font-size: 14px; color: #5C584F">01</div>
+<div style="font-size: 19px; font-weight: 700">作業を工程に分ける</div>
+<p style="margin: 0; font-size: 14px; line-height: 1.8; color: #3F3C36">毎日の作業を振り返り、「くり返している」「時間がかかる」工程を見つけます。振り返りアプリ自体もこのために作りました。</p>
+</div>
+<div style="border-top: 3px solid #2D4A7A; padding-top: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'JetBrains Mono',monospace; font-size: 14px; color: #5C584F">02</div>
+<div style="font-size: 19px; font-weight: 700">人と機械の分担を決める</div>
+<p style="margin: 0; font-size: 14px; line-height: 1.8; color: #3F3C36">APIで取れないデータや人の判断が必要な部分は無理に自動化せず、手作業を最小限の1操作にまとめます。</p>
+</div>
+<div style="border-top: 3px solid #2D4A7A; padding-top: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'JetBrains Mono',monospace; font-size: 14px; color: #5C584F">03</div>
+<div style="font-size: 19px; font-weight: 700">作って、使って、直す</div>
+<p style="margin: 0; font-size: 14px; line-height: 1.8; color: #3F3C36">実際に使って出たエラーや使いにくさをその場で直します。通信エラーが出たアプリは、通信不要の方式に作り替えました。</p>
+</div>
+<div style="border-top: 3px solid #2D4A7A; padding-top: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'JetBrains Mono',monospace; font-size: 14px; color: #5C584F">04</div>
+<div style="font-size: 19px; font-weight: 700">誰でも使える形にする</div>
+<p style="margin: 0; font-size: 14px; line-height: 1.8; color: #3F3C36">ダブルクリックやドラッグ＆ドロップで動く形にし、用語集つきの使い方ガイドを添えて、パソコンが苦手な人でも使えるようにします。</p>
+</div>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section style="padding: 72px 80px 72px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px">
+<div style="background: #FFFDF8; border: 1px solid #D9D2C3; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+<div style="font-family: 'JetBrains Mono',monospace; font-size: 13px; letter-spacing: 0.16em; color: #9A4A1B">FOR EVERYONE</div>
+<h2 style="margin: 0; font-family: 'Zen Old Mincho',serif; font-size: 28px; font-weight: 700">お任せいただけること</h2>
+<p style="margin: 0; font-size: 15px; line-height: 1.9; color: #3F3C36">eBay輸出などのリサーチ業務の効率化、計算シートからスプレッドシートへの自動入力、楽天ROOMの商品リサーチと投稿文づくりの自動化、毎日の手作業の洗い出しと改善の提案。専門用語を使わずに説明し、使い方ガイドまで用意します。</p>
+</div>
+<div style="background: #1E1D1A; color: #F3EFE6; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+<div style="font-family: 'JetBrains Mono',monospace; font-size: 13px; letter-spacing: 0.16em; color: #E3A57C">FOR ENGINEERS</div>
+<h2 style="margin: 0; font-family: 'Zen Old Mincho',serif; font-size: 28px; font-weight: 700">使用技術</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+
+<span style="font-family: 'JetBrains Mono','Zen Kaku Gothic New',monospace; font-size: 13px; border: 1px solid #5C584F; border-radius: 6px; padding: 6px 10px; color: #F3EFE6">Python</span>
+
+<span style="font-family: 'JetBrains Mono','Zen Kaku Gothic New',monospace; font-size: 13px; border: 1px solid #5C584F; border-radius: 6px; padding: 6px 10px; color: #F3EFE6">pandas</span>
+
+<span style="font-family: 'JetBrains Mono','Zen Kaku Gothic New',monospace; font-size: 13px; border: 1px solid #5C584F; border-radius: 6px; padding: 6px 10px; color: #F3EFE6">openpyxl</span>
+
+<span style="font-family: 'JetBrains Mono','Zen Kaku Gothic New',monospace; font-size: 13px; border: 1px solid #5C584F; border-radius: 6px; padding: 6px 10px; color: #F3EFE6">YAML</span>
+
+<span style="font-family: 'JetBrains Mono','Zen Kaku Gothic New',monospace; font-size: 13px; border: 1px solid #5C584F; border-radius: 6px; padding: 6px 10px; color: #F3EFE6">Windowsバッチ（.bat）</span>
+
+<span style="font-family: 'JetBrains Mono','Zen Kaku Gothic New',monospace; font-size: 13px; border: 1px solid #5C584F; border-radius: 6px; padding: 6px 10px; color: #F3EFE6">Google Apps Script</span>
+
+<span style="font-family: 'JetBrains Mono','Zen Kaku Gothic New',monospace; font-size: 13px; border: 1px solid #5C584F; border-radius: 6px; padding: 6px 10px; color: #F3EFE6">JavaScript</span>
+
+<span style="font-family: 'JetBrains Mono','Zen Kaku Gothic New',monospace; font-size: 13px; border: 1px solid #5C584F; border-radius: 6px; padding: 6px 10px; color: #F3EFE6">HTML／CSS</span>
+
+<span style="font-family: 'JetBrains Mono','Zen Kaku Gothic New',monospace; font-size: 13px; border: 1px solid #5C584F; border-radius: 6px; padding: 6px 10px; color: #F3EFE6">楽天API</span>
+
+<span style="font-family: 'JetBrains Mono','Zen Kaku Gothic New',monospace; font-size: 13px; border: 1px solid #5C584F; border-radius: 6px; padding: 6px 10px; color: #F3EFE6">OpenAI API</span>
+
+<span style="font-family: 'JetBrains Mono','Zen Kaku Gothic New',monospace; font-size: 13px; border: 1px solid #5C584F; border-radius: 6px; padding: 6px 10px; color: #F3EFE6">eBay Browse API（設計）</span>
+
+<span style="font-family: 'JetBrains Mono','Zen Kaku Gothic New',monospace; font-size: 13px; border: 1px solid #5C584F; border-radius: 6px; padding: 6px 10px; color: #F3EFE6">Excel／スプレッドシート関数</span>
+
+<span style="font-family: 'JetBrains Mono','Zen Kaku Gothic New',monospace; font-size: 13px; border: 1px solid #5C584F; border-radius: 6px; padding: 6px 10px; color: #F3EFE6">GitHub／clasp</span>
+
+</div>
+<p style="margin: 0; font-size: 14px; line-height: 1.8; color: #CFC7B6">AI（Claude）と協働して設計・実装。コードはGitHubで管理しています。</p>
+</div>
+</section>
+
+<!-- CONTACT -->
+<footer style="flex-grow: 1; background: #1E1D1A; color: #F3EFE6; padding: 72px 80px; display: flex; flex-direction: column; gap: 20px">
+<div style="font-family: 'JetBrains Mono',monospace; font-size: 13px; letter-spacing: 0.16em; color: #E3A57C">CONTACT</div>
+<h2 style="margin: 0; font-family: 'Zen Old Mincho',serif; font-size: 40px; font-weight: 700">「この作業、なんとかならないかな」から、ご相談ください。</h2>
+<div style="display: flex; gap: 40px; font-size: 16px; color: #CFC7B6">
+<span>メール：[メールアドレス]</span>
+<span>クラウドワークス：[プロフィールURL]</span>
+<span>SNS：[アカウント]</span>
+</div>
+</footer>
+</div>
+</div>
+<script>
+document.querySelectorAll('button[data-mode]').forEach(function(b){b.addEventListener('click',function(){
+  var y=window.scrollY;document.body.className='m-'+b.getAttribute('data-mode');window.scrollTo(0,y);
+  var t=document.querySelector('.mode-'+b.getAttribute('data-mode')+' button[data-mode="'+b.getAttribute('data-mode')+'"]');if(t)t.focus();
+})});
+</script>
+</body>
+</html>
